@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import React from "react";
-import { Text } from "./components";
+import { FP } from "./components";
 
 const Em = ({ children }: { children: React.ReactNode }) => (
   <em style={{ background: "yellow", color: "black" }}>{children}</em>
@@ -14,19 +14,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <Text as="div">Hello Text world</Text>
+        <FP as="div">Hello Text world</FP>
 
-        <Text as="h1">
+        <FP as="h1">
           Edit <code>src/App.tsx</code> and save to reload.
-        </Text>
+        </FP>
 
         {/* Example: passing a specific component prop */}
-        <Text color="violet">Hello world</Text>
+        <FP color="violet">Hello world</FP>
 
         {/* Example: the 'as' prop can also take in a custom component*/}
-        <Text as={Em}>This is important</Text>
+        <FP as={Em}>This is important</FP>
 
-        <Text
+        <FP
           as="a"
           className="App-link"
           href="https://reactjs.org"
@@ -34,7 +34,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </Text>
+        </FP>
       </header>
     </div>
   );
